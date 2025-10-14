@@ -1,0 +1,23 @@
+# IDE Files
+.idea/
+*.iml
+
+# Build Files
+.gradle/
+build/
+
+# Local Configuration
+local.properties
+
+# Keystore Files (Penting untuk keamanan)
+*.jks
+*.keystore
+
+# Mac Files
+.DS_Store
+
+# Misc Android
+captures/
+.externalNativeBuild/
+.cxx/
+*.hprof
