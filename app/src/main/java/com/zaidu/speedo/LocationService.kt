@@ -26,13 +26,6 @@ class LocationService(context: Context) {
             1000
         ).build()
 
-
-//        val locationRequest = LocationRequest.create().apply {
-//            interval = 500 // Interval yang diinginkan
-//            fastestInterval = 250 // Interval tercepat yang bisa diterima
-//            priority = Priority.PRIORITY_HIGH_ACCURACY
-//        }
-
         // Callback untuk menerima update lokasi
         val locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {

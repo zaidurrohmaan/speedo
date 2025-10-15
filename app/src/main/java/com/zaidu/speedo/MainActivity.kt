@@ -160,6 +160,8 @@ fun SpeedoScreen(
     }
 }
 
+
+
 @Composable
 fun SpeedDisplay(speed: Float, isRunning: Boolean, hasStarted: Boolean) {
     // Konversi m/s ke Km/h
@@ -171,7 +173,6 @@ fun SpeedDisplay(speed: Float, isRunning: Boolean, hasStarted: Boolean) {
         label = "SpeedAnimation"
     )
 
-    // Tentukan alpha: 1.0f (solid) jika berjalan, 0.5f (redup) jika paused
     val contentAlpha = if (hasStarted && !isRunning) 0.5f else 1.0f
 
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -192,7 +193,6 @@ fun SpeedDisplay(speed: Float, isRunning: Boolean, hasStarted: Boolean) {
 
 @Composable
 fun StatsDisplay(distance: Float, elapsedTime: Long, isRunning: Boolean, hasStarted: Boolean) {
-    // Tentukan alpha: 1.0f (solid) jika berjalan, 0.5f (redup) jika paused
     val contentAlpha = if (hasStarted && !isRunning) 0.5f else 1.0f
 
     Row(
